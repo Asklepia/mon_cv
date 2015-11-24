@@ -1,0 +1,98 @@
+/* Police */
+@font-face 
+{
+    font-family: 'Gothic';
+    src: url('Elementary_Gothic_Bookhand.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Liseret */
+.liseret
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:150px;
+	height:auto;
+	overflow:hidden;
+}
+
+@media screen and (max-width: 1024px)
+{
+	.liseret
+	{
+		display:none;
+	}
+}
+
+/* Header */
+
+#accroche h1, h1 + p
+{
+	font-family:'Gothic','Arial', sans-serif;
+		color : #999999;
+    text-align: center;
+}
+
+#accroche img
+{
+    float: right;	
+	width:150px;
+	height:190px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+/* Sections */
+	/* Généralités */
+	
+h2
+{
+	font-family:"Gothic";
+	color: #999999;
+	border-left:2px grey solid;
+	border-bottom : 2px grey solid;
+	clear:right;
+}
+
+li
+{
+	clear:right;
+}
+
+	/* Positionnement en grand écran */
+@media screen and (min-width: 1024px)
+{
+	.experience,.formation,.competences
+	{
+		display:inline-block;
+		vertical-align:top;
+		word-wrap:break-word;
+	}
+
+	.experience
+	{
+		position:relative;
+		margin-left:170px;
+		width:30%;
+	}
+
+	.formation
+	{
+		position:relative;
+		margin-left:10px;
+		width:25%;
+	}
+
+	.competences
+	{
+		position:absolute;
+		margin-right:10px;
+		margin-left:10px;
+		width:25%;
+	}
+}
+
+
+
